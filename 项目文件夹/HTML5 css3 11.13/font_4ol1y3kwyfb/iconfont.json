@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8106238",
+      "name": "brightness2",
+      "font_class": "brightness",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "8106261",
+      "name": "vision",
+      "font_class": "vision",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "8106268",
+      "name": "night",
+      "font_class": "night",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "8106276",
+      "name": "visible",
+      "font_class": "visible",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "8106283",
+      "name": "hangup",
+      "font_class": "hangup",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "10678408",
+      "name": "clock",
+      "font_class": "clock",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "10678410",
+      "name": "entertainment mark",
+      "font_class": "entertainmentmark",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "10678427",
+      "name": "light ctrl",
+      "font_class": "lightctrl",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "10678429",
+      "name": "kids lock",
+      "font_class": "kidslock",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "10678435",
+      "name": "huoyan",
+      "font_class": "huoyan",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "10678454",
+      "name": "xiami music",
+      "font_class": "xiamimusic",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "10678455",
+      "name": "sleep mode",
+      "font_class": "sleepmode",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    }
+  ]
+}
