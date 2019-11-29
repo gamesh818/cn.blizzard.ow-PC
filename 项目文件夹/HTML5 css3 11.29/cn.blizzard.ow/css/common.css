@@ -1,0 +1,16 @@
+/* 清除浮动 */
+.qcfd::after,
+.qcfd::before{
+    content: "";
+    display: table;
+}
+.qcfd::after{
+    clear: both;
+}
+.qcfd{
+    *zoom: 1;
+}
+/* 版心 */
+/* .content{
+    
+} */
