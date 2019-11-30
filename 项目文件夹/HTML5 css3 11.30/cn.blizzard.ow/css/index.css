@@ -1,0 +1,333 @@
+body{
+    height: 10000px;
+}
+.topnav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+.topnav .content{
+    position: relative;
+    margin: 0 40px;
+}
+/* 顶部导航栏左边部分 */
+
+/* 左边部分-logo部分 */
+.topnav-logo{
+    float: left;
+    width: 61px;
+    height: 40px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+    
+}
+.topnav-logo:hover{
+    opacity:0.7;
+    transition: all 0.5s;
+}
+/* 左边部分-文字部分 */
+.topnav-left{
+    float: left;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.topnav-left li{
+    float: left;
+    margin-right: 25px;
+}
+.topnav-left li a{
+    font-size: 15px;
+    color: #bcb9b8;
+    transition: all 0.5s;
+}
+.topnav-left li:first-child a{
+    color: #fff;
+    text-shadow: -5px -2px 9px #fff;
+}
+.topnav-left li a:hover{
+    color: #fff;
+}
+.topnav-left .xiaosanjiao{
+    display: inline-block;
+    width: 14px;
+    height: 7px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: -147px -131px;
+    margin-left: 5px;
+}
+/* 顶部导航栏右边部分 */
+.topnav-right{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.topnav-right a{
+    color: #bcb9b8;
+     font-size: 15px;
+     transition: all 0.5s;
+}
+.topnav-right a:first-child{
+    margin-right: 38px;
+}
+.topnav-right a:hover{
+    color: #fff;
+}
+/* 顶部视频 */
+/* 顶部视频-视频部分 */
+.top-video{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    min-height: 600px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.topvideo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden
+}
+.topvideo video{
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+/* 顶部视频-暂停按钮 */
+.top-video-anniu{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+}
+.top-video-anniu span:first-child{
+    float: left;
+    background-image: url(../img/video-anniu.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.top-video-anniu span:last-child{
+    float: left;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* 顶部视频-文字部分 */
+.top-video-text{
+    position: relative;
+    z-index: 10;
+}
+.top-video-text img{
+    display: block;
+    min-width: 350px;
+    width: 50vmin;
+    margin-left: 20px;
+}
+.top-video-text a{
+    float: left;
+    color: #fcfeff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 45px;
+    margin: 0 10px;
+}
+.top-video-text a:nth-child(2){
+    background-color: #00a5e2;
+}
+.top-video-text a:nth-child(3){
+    background-color: #ffb033;
+}
+/* 固定导航栏 */
+.fixnav{
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    margin:0 auto;
+    background-color: #f2f1ed;
+    z-index: 11;
+}
+/* 固定导航栏-左边 */
+.fixnav .fixnav-logo{
+    float: left;
+    width: 53px;
+    height: 48px;
+    background-image: url(../img/1_assets_img_logos_nav_logo_new.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.fixnav-left{
+    float: left;
+}
+.fixnav-left li{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #e5e3dc;
+    box-sizing: border-box;
+}
+.fixnav-left li a{
+    display: inline-block;
+    padding: 0 20px;
+    height: 48px;
+    font-size: 16px;
+}
+.fixnav-left li a:hover{
+    background-color: #353c42;
+    color: #ff9c00;
+}
+.fixnav-left-xsj::after{
+    display: inline-block;
+    content: "";
+    margin: 5px 0 0 5px;
+    width: 18px;
+    height: 8px;
+    background-image: url(../img/fixnav-xsj.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-sizing: border-box;
+}
+.fixnav-left-xsj::after:hover{
+    background-position: 0px 10px;
+}
+
+/* 固定导航栏-右边 */
+.fixnav-fight{
+    float: right;
+    height: 48px;
+    padding: 0 40px;
+    background-color: #f7931e;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 新闻公告 */
+.news{
+    width: 100%;
+}
+.news .news-container{
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 55px;
+    box-sizing: border-box;
+}
+.news-title{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.news-text{
+     position: relative;
+     float: left;
+     width: 370px;
+     height: 205px;
+     margin-right: 15px;
+}
+.news-text:last-child{
+    margin-right: 0;
+}
+
+.news-text a{
+    display: block;
+    height: 100%;
+    background-image: url(../upload/yushezhize.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    box-sizing: border-box;
+}
+.news-text:nth-child(3) a{
+    background-image: url(../upload/huifangxitong.jpg);
+}
+.news-text:last-child a{
+    margin-right: 0;
+    background-image: url(../upload/限时特惠.jpg);
+}
+.news-yiny{
+    position: absolute;
+    bottom: 0;
+    height: 54px;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+    line-height: 54px;
+    font-size: 18px;
+    color:#f0edf2;
+}
+.news-yiny h3{
+    font-weight: 400;
+    text-align: left;
+    padding-left: 20px;
+}
+/* 全新英雄介绍 */
+.newhero{
+    width: 100%;
+    height: 437px;
+    background-image: url(../upload/newhero.jpg);
+    background-repeat: no-repeat;
+    background-position: -165px 0px;
+    background-size: cover;
+    
+}
+.newhero .banxin{
+    width: 100%;
+    height: 223px;
+}
+.newhero-text{
+    display: inline-block;
+    margin-left: 765px;
+    padding-top: calc((300px -223px)/2);
+}
+.newhero-text h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: #545863;
+}
+.newhero-text span{
+    display: inline-block;
+    font-size: 24px;
+    color: #4e6495;
+    margin: 10px 0;
+}
+.newhero-text p{
+    font-size: 18px;
+    line-height: 26px;
+}
+.newhero-text a{
+    display: inline-block;
+    margin-top: 25px;
+    width: 165px;
+    height: 38px;
+    background-color: #ff9c00;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
