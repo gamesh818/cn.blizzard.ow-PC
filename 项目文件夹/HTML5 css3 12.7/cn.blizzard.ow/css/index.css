@@ -1,0 +1,991 @@
+/* body{
+    height: 10000px;
+} */
+.topnav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+.topnav .content{
+    position: relative;
+    margin: 0 40px;
+}
+/* 顶部导航栏左边部分 */
+
+/* 左边部分-logo部分 */
+.topnav-logo{
+    float: left;
+    width: 61px;
+    height: 40px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+    
+}
+.topnav-logo:hover{
+    opacity:0.7;
+    transition: all 0.5s;
+}
+/* 左边部分-文字部分 */
+.topnav-left{
+    float: left;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 30px;
+}
+.topnav-left li{
+    float: left;
+    margin-right: 25px;
+}
+.topnav-left li a{
+    font-size: 15px;
+    color: #bcb9b8;
+    transition: all 0.5s;
+}
+.topnav-left li:first-child a{
+    color: #fff;
+    text-shadow: -5px -2px 9px #fff;
+}
+.topnav-left li a:hover{
+    color: #fff;
+}
+.topnav-left .xiaosanjiao{
+    display: inline-block;
+    width: 14px;
+    height: 7px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: -147px -131px;
+    margin-left: 5px;
+}
+/* 顶部导航栏右边部分 */
+.topnav-right{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.topnav-right a{
+    color: #bcb9b8;
+     font-size: 15px;
+     transition: all 0.5s;
+}
+.topnav-right a:first-child{
+    margin-right: 38px;
+}
+.topnav-right a:hover{
+    color: #fff;
+}
+/* 顶部视频 */
+/* 顶部视频-视频部分 */
+.top-video{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 90vh; */
+    min-height: 600px;
+    overflow: hidden;
+}
+.topvideo{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    overflow: hidden
+}
+.topvideo video{
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+/* 顶部视频-暂停按钮 */
+.top-video-anniu{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+}
+.top-video-anniu span:first-child{
+    float: left;
+    background-image: url(../img/video-anniu.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.top-video-anniu span:last-child{
+    float: left;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* 顶部视频-文字部分 */
+.top-video-text{
+    position: relative;
+    z-index: 10;
+}
+.top-video-text img{
+    display: block;
+    min-width: 350px;
+    width: 50vmin;
+    margin-left: 20px;
+}
+.top-video-text a{
+    float: left;
+    color: #fcfeff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 45px;
+    margin: 0 10px;
+}
+.top-video-text a:nth-child(2){
+    background-color: #00a5e2;
+}
+.top-video-text a:nth-child(3){
+    background-color: #ffb033;
+}
+/* 固定导航栏 */
+.fixnav{
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    margin:0 auto;
+    background-color: #f2f1ed;
+    z-index: 11;
+}
+/* 固定导航栏-左边 */
+.fixnav .fixnav-logo{
+    float: left;
+    width: 53px;
+    height: 48px;
+    background-image: url(../img/1_assets_img_logos_nav_logo_new.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.fixnav-left{
+    float: left;
+}
+.fixnav-left li{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #e5e3dc;
+    box-sizing: border-box;
+}
+.fixnav-left li a{
+    display: inline-block;
+    padding: 0 20px;
+    height: 48px;
+    font-size: 16px;
+}
+.fixnav-left li a:hover{
+    background-color: #353c42;
+    color: #ff9c00;
+}
+.fixnav-left-xsj::after{
+    display: inline-block;
+    content: "";
+    margin: 5px 0 0 5px;
+    width: 18px;
+    height: 8px;
+    background-image: url(../img/fixnav-xsj.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    box-sizing: border-box;
+}
+.fixnav-left-xsj::after:hover{
+    background-position: 0px 10px;
+}
+
+/* 固定导航栏-右边 */
+.fixnav-fight{
+    float: right;
+    height: 48px;
+    padding: 0 40px;
+    background-color: #f7931e;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* 新闻公告 */
+.news{
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.news .news-container{
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 55px;
+    box-sizing: border-box;
+}
+.news-title{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.news-text{
+     position: relative;
+     float: left;
+     width: 370px;
+     height: 205px;
+     margin-right: 10px;
+}
+.news-text:last-child{
+    margin-right: 0;
+}
+
+.news-text a{
+    display: block;
+    height: 100%;
+    background-image: url(../upload/yushezhize.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    box-sizing: border-box;
+}
+.news-text:nth-child(3) a{
+    background-image: url(../upload/huifangxitong.jpg);
+}
+.news-text:nth-child(4) a{
+    margin-right: 0;
+    background-image: url(../upload/限时特惠.jpg);
+}
+.news-yiny{
+    position: absolute;
+    bottom: 0;
+    height: 54px;
+    width: 100%;
+    background-color: rgba(0,0,0,.75);
+    line-height: 54px;
+    font-size: 18px;
+    color:#f0edf2;
+}
+.news-yiny h3{
+    font-weight: 400;
+    text-align: left;
+    padding-left: 20px;
+}
+.news-anniu{
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 462px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 259px;
+    height: 41px;
+    color: #fff;
+    background-color: #00a5e2;
+}
+/* 全新英雄介绍 */
+.newhero{
+    width: 100%;
+    height: 437px;
+    background-image: url(../upload/newhero.jpg);
+    background-repeat: no-repeat;
+    background-position: -165px 0px;
+    background-size: cover;
+    
+}
+.newhero .banxin{
+    width: 100%;
+    height: 223px;
+}
+.newhero-text{
+    display: inline-block;
+    margin-left: 765px;
+    padding-top: calc((300px -223px)/2);
+}
+.newhero-text h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    color: #545863;
+}
+.newhero-text span{
+    display: inline-block;
+    font-size: 24px;
+    color: #4e6495;
+    margin: 10px 0;
+}
+.newhero-text p{
+    font-size: 18px;
+    line-height: 36px;
+}
+.newhero-text a{
+    display: inline-block;
+    margin-top: 25px;
+    width: 165px;
+    height: 38px;
+    background-color: #ff9c00;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+/* 全英雄介绍 */
+.thehero{
+    width: 100%;
+    background-image: url(../img/thehero-background-color.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 80px 0;
+}
+
+/* 全英雄介绍-文字部分 */
+.thehero-text{
+    max-width: 1250px;
+    width: 100%;
+    text-align: center;
+    margin:0 auto ;
+}
+.thehero-text span{
+    display: block;
+    font-size: 58px;
+    font-style: italic;
+    color: #333333;
+    padding-bottom: 45px;
+}
+.thehero-text p{
+    font-size: 24px;
+    color: #333333;
+}
+/* 全英雄介绍-轮播部分 */
+div.thehero-lunbo{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* 全英雄介绍-轮播部分-轮播文字部分 */
+.thehero-lunbo-content-text-box{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 200px;
+    background-image: -webkit-linear-gradient(left,rgba(42,55,81,0),rgba(42,55,81,.8) 25%,rgba(42,55,81,.8) 75%,rgba(42,55,81,0));
+}
+
+
+/* 全英雄介绍-选择英雄部分 */
+.thehero-select{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 450px 0 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.boxbox{
+    position: relative;
+}
+.thehero-select li{
+    display: inline-block;
+    
+}
+.thehero-select a{
+    display: inline-block;
+}
+.thehero-select .thehero-select-minbox:hover{
+    width: 84px;
+    height: 100.8px;
+    margin: -6px -1px;
+    /* border-left-width: 0px;
+    border-right-width: 0px; */
+    background-color: #f7931e;
+}
+.thehero-select-minbox:hover .thehero-select span{
+    background-color: #f0edf2;
+}
+    
+.thehero-select span{
+    display: block;
+    font-size: 13px;
+}
+.thehero-select-minbox{
+    display: inline-block;
+    transform: skew(25rad);
+    width: 70px;
+    height: 84px;
+    overflow: hidden;
+    border-radius: 7px;    
+    border: 3px solid #f0edf2;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin: 2.4px 6px;
+    background-color: #464445;
+}
+.thehero-select-role{
+    display: inline-block;
+    width: calc(100% + 10px);
+    height: 100%;
+    background: url(../img/thehero-dva-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+    transform: skew(-25rad) translateX(-5px);
+}
+/* dva部分 */
+.thehero-select-centet:hover .thehero-select-centet-text,
+.thehero-select-centet:hover .thehero-lunbo-centet-tu{
+    display: block;
+}
+/* 轮播文本部分 */
+.thehero-select-centet-text{
+    position: absolute;
+    right: -20px;
+    top: -275px;
+    /* display: none; */
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.thehero-select-centet-text h2{
+    font-size: 58px;
+    font-weight: 400;
+    font-style: italic;
+    color: #f0edf2;
+    padding-left: 50%;
+    line-height: 1.6;
+}
+.thehero-select-centet-text p{
+    font-size: 16px;
+    color: #f0edf2;
+    padding-left: 50%;
+    box-sizing: inherit;
+    line-height: 1.6;
+}
+/* 轮播图片部分 */
+.thehero-lunbo-centet-tu{
+    /* display: none; */
+    position: absolute;
+    right: 585px;
+    top: -436px;
+    width: 906px;
+    height: 440px;
+    background-image: url(../img/thehero-dva.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto 100%;  
+    box-sizing: border-box;
+}
+/* dva部分 */
+ .dva{
+     background-image: url(../img/thehero-dva.png);
+ }
+/* 奥丽莎部分 */
+ .aolisha{
+    background-image: url(../img/thehero-aolisha.png);
+}
+/* 莱因哈特部分 */
+ .thehero-select-laiyinhate .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-laiyinghate.png);
+}
+/* 路霸部分 */
+ .thehero-select-luba .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-luba.png);
+}
+/* 温斯顿部分 */
+ .thehero-select-wensidun .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-wensidun.png);
+}
+/* 查莉娅部分 */
+ .thehero-select-chaliya .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-chaliya.png);
+}
+/* 破坏球部分 */
+ .thehero-select-pohuaiqiu .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-pohuaiqiu.png);
+}
+/* 西格玛部分 */
+ .thehero-select-xigema .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-xigema.png);
+}
+/* 巴蒂斯特部分 */
+ .thehero-select-badisite .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-badisite.png);
+}
+/* 艾什部分 */
+ .thehero-select-aishen .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-aishen.png);
+}
+/* 堡垒部分 */
+.thehero-select-baolei .thehero-select-role{
+    background: url(../img/thehero-baolei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 堡垒-轮播图片部分 */
+ .thehero-select-baolei .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-baolei.png);
+}
+.thehero-select-baolei:hover  .thehero-select-centet-text,
+.thehero-select-baolei:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 末日铁拳部分 */
+.thehero-select-moritiequan .thehero-select-role{
+    background: url(../img/thehero-moritiequan-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 末日铁拳-轮播图片部分 */
+ .thehero-select-moritiequan .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-moritiequan.png);
+}
+.thehero-select-moritiequan:hover  .thehero-select-centet-text,
+.thehero-select-moritiequan:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 源氏部分 */
+.thehero-select-yuanshi .thehero-select-role{
+    background: url(../img/thehero-yuanshi-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 源氏-轮播图片部分 */
+ .thehero-select-yuanshi .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-yuanshi.png);
+}
+.thehero-select-yuanshi:hover  .thehero-select-centet-text,
+.thehero-select-yuanshi:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 半藏部分 */
+.thehero-select-banzang .thehero-select-role{
+    background: url(../img/thehero-banzang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 半藏-轮播图片部分 */
+ .thehero-select-banzang .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-banzang.png);
+}
+.thehero-select-banzang:hover  .thehero-select-centet-text,
+.thehero-select-banzang:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 狂鼠部分 */
+.thehero-select-kuangshu .thehero-select-role{
+    background: url(../img/thehero-kuangshu-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 狂鼠-轮播图片部分 */
+ .thehero-select-kuangshu .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-kuangshu.png);
+}
+.thehero-select-kuangshu:hover  .thehero-select-centet-text,
+.thehero-select-kuangshu:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 麦克雷部分 */
+.thehero-select-maikelei .thehero-select-role{
+    background: url(../img/thehero-maikelei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 麦克雷-轮播图片部分 */
+ .thehero-select-maikelei .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-maikelei.png);
+}
+.thehero-select-maikelei:hover  .thehero-select-centet-text,
+.thehero-select-maikelei:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 美部分 */
+.thehero-select-mei .thehero-select-role{
+    background: url(../img/thehero-mei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 美-轮播图片部分 */
+ .thehero-select-mei .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-mei.png);
+}
+.thehero-select-mei:hover  .thehero-select-centet-text,
+.thehero-select-mei:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 法老之鹰部分 */
+.thehero-select-falaozhiying .thehero-select-role{
+    background: url(../img/thehero-falaozhiying-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 法老之鹰-轮播图片部分 */
+ .thehero-select-falaozhiying .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-falaozhiying.png);
+}
+.thehero-select-falaozhiying:hover  .thehero-select-centet-text,
+.thehero-select-falaozhiying:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 死神部分 */
+.thehero-select-sishen .thehero-select-role{
+    background: url(../img/thehero-sishen-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 死神-轮播图片部分 */
+ .thehero-select-sishen .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-sishen.png);
+}
+.thehero-select-sishen:hover  .thehero-select-centet-text,
+.thehero-select-sishen:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 士兵:76部分 */
+.thehero-select-shibing76 .thehero-select-role{
+    background: url(../img/thehero-shibing76-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 士兵:76-轮播图片部分 */
+ .thehero-select-shibing76 .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-shibing76.png);
+}
+.thehero-select-shibing76:hover  .thehero-select-centet-text,
+.thehero-select-shibing76:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 黑影部分 */
+.thehero-select-heiying .thehero-select-role{
+    background: url(../img/thehero-heiying-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 黑影轮播图片部分 */
+ .thehero-select-heiying .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-heiying.png);
+}
+.thehero-select-heiying:hover  .thehero-select-centet-text,
+.thehero-select-heiying:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 秩序之光部分 */
+.thehero-select-zhixuzhiguang .thehero-select-role{
+    background: url(../img/thehero-zhixuzhiguang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 秩序之光-轮播图片部分 */
+ .thehero-select-zhixuzhiguang .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-zhixuzhiguang.png);
+}
+.thehero-select-zhixuzhiguang:hover  .thehero-select-centet-text,
+.thehero-select-zhixuzhiguang:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 托比昂部分 */
+.thehero-select-tuobiang .thehero-select-role{
+    background: url(../img/thehero-tuobiang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 托比昂-轮播图片部分 */
+ .thehero-select-tuobiang .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-tuobiang.png);
+}
+.thehero-select-tuobiang:hover  .thehero-select-centet-text,
+.thehero-select-tuobiang:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 猎空部分 */
+.thehero-select-liekong .thehero-select-role{
+    background: url(../img/thehero-liekong-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 猎空-轮播图片部分 */
+ .thehero-select-liekong .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-liekong.png);
+}
+.thehero-select-liekong:hover  .thehero-select-centet-text,
+.thehero-select-liekong:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 黑百合部分 */
+.thehero-select-heibaihe .thehero-select-role{
+    background: url(../img/thehero-heibaihe-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 黑百合-轮播图片部分 */
+ .thehero-select-heibaihe .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-heibaihe.png);
+}
+.thehero-select-heibaihe:hover  .thehero-select-centet-text,
+.thehero-select-heibaihe:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 安娜部分 */
+.thehero-select-anna .thehero-select-role{
+    background: url(../img/thehero-anna-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 安娜-轮播图片部分 */
+ .thehero-select-anna .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-anna.png);
+}
+.thehero-select-anna:hover  .thehero-select-centet-text,
+.thehero-select-anna:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 布里吉塔部分 */
+.thehero-select-bulijita .thehero-select-role{
+    background: url(../img/thehero-bulijita-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 布里吉塔-轮播图片部分 */
+ .thehero-select-bulijita .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-bulijita.png);
+}
+.thehero-select-bulijita:hover  .thehero-select-centet-text,
+.thehero-select-bulijita:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 卢西奥部分 */
+.thehero-select-luxiao .thehero-select-role{
+    background: url(../img/thehero-luxiao-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 西格玛-轮播图片部分 */
+ .thehero-select-luxiao .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-luxiao.png);
+}
+.thehero-select-luxiao:hover  .thehero-select-centet-text,
+.thehero-select-luxiao:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 天使部分 */
+.thehero-select-tianshi .thehero-select-role{
+    background: url(../img/thehero-tianshi-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 西格玛-轮播图片部分 */
+ .thehero-select-tianshi .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-tianshi.png);
+}
+.thehero-select-tianshi:hover  .thehero-select-centet-text,
+.thehero-select-tianshi:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 莫伊拉部分 */
+.thehero-select-moyila .thehero-select-role{
+    background: url(../img/thehero-moyila-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 莫伊拉-轮播图片部分 */
+ .thehero-select-moyila .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-moyila.png);
+}
+.thehero-select-moyila:hover  .thehero-select-centet-text,
+.thehero-select-moyila:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 禅雅塔部分 */
+.thehero-select-chanyata .thehero-select-role{
+    background: url(../img/thehero-chanyata-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 禅雅塔-轮播图片部分 */
+ .thehero-select-chanyata .thehero-lunbo-centet-tu{
+    background-image: url(../img/thehero-chanyata.png);
+}
+.thehero-select-chanyata:hover  .thehero-select-centet-text,
+.thehero-select-chanyata:hover  .thehero-lunbo-centet-tu {
+    display: block;
+}
+/* 底部购买 */
+
+.bottombuy{
+    width: 100%;
+    height: 280px;
+    background: url(../img/thehero-background-color.jpg) no-repeat ;
+    text-align: center;
+    
+}
+.bottombuy .banxin{
+    position: relative;
+}
+.bottombuy h2{
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 400;
+    padding-top: 50px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.bottombuy p{
+    position: relative;
+    font-size: 28px;
+    margin: 12px 0 20px 0;
+    z-index: 1;
+}
+.bottombuy a{
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    width: 165px;
+    height: 38px;
+    background-color: #ff9c00;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+.bottombuy a:hover{
+    background-color: #ffb033; 
+}
+.bottombuy-logo{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 680px;
+    height: 370px;
+    background: url(../img/bottmo-img.png);
+    z-index: 0;
+}
+/* 底部 */
+.foot{
+    width: 100%;
+    background-color: #202020;
+}
+/* 底部-底部服务 */
+
+.foot .banxin{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.foot-kefu{
+    padding-top: 40px;
+}
+.foot-kefu a{
+    display: inline-block;
+    margin-right: 40px;
+    color: #fff;
+    
+}
+.foot-kefu span{
+    display: inline-block;
+    background-image: url(../upload/1_images_common_sprite-24-blue.png);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.foot-kefu-one{
+    background-position: -96px 0;
+}
+.foot-kefu-tow{
+    background-position: -144px -24px;
+}
+.foot-kefu-three{
+    background-position: -24px -119px;
+}
+/* 底部条款部分 */
+.clause-banxin{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0 20px 0;
+}
+.foot-clause{   
+    float: left;
+    width: 706px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+.baoxue-logo{
+    float: left;
+    width: 130px;
+    height: 71px;
+    position: relative;
+    background: url(../upload/baoxue-logo.png);
+}
+.wangyi-logo{
+    float: left;
+    position: relative;
+    width: 125px;
+    height: 38px;
+    background: url(../upload/wangyi-logo.png);
+    top: 32px;
+}
+.foot-clause ul{
+    margin-bottom: 10px;
+}
+.foot-clause ul li{
+    display: inline-block;
+    color: #cccccc;
+    font-size: 14px;
+}
+.foot-clause li a{
+    color: #cccccc;
+    font-size: 14px;
+}
+.foot-clause i{
+    margin:0 10px ;
+}
+.foot-clause p{
+    display: inline-block;
+    color: #909090;
+}
+.foot-clause p a{
+    color: #909090;
+}
+.foot-clause p a:hover,
+.foot-clause li a:hover{
+    color: #FFF;
+}
+.foot-clause p img{
+    vertical-align: middle;
+}
+.tiaokuan>a{
+    display: inline-block;
+}
+/* 游戏健康部分 */
+.gamehealth-banxin{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #414141;
+    text-align: center;
+    color: #636363;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
