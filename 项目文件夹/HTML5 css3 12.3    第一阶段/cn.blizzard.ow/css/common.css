@@ -1,0 +1,22 @@
+/* 清除浮动 */
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+/* 版心 */
+/* .content{
+    
+} */
+/* 预设职责版心 */
+.The-default-responsibilities-banxin{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
