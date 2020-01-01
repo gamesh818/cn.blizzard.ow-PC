@@ -1,0 +1,301 @@
+//图片三像素
+*img{
+    vertical-align: middle;
+  }
+// 清除浮动
+@mixin clerflex {
+    &:after,
+    &:before{
+        content: "";
+        display:table;
+    }
+    &:after{
+        clear: both;
+    }
+    &:after{
+      *zoom: 1;  
+    }
+}
+// 绝对定位垂直居中
+@mixin box-align($box-align-left:50%,$box-align-top:50%) {
+    position: absolute;
+    left: $box-align-left;
+    top: $box-align-top;
+    transform: translate(-50%,-50%);
+}
+//相对定位水平居中
+@mixin relative-align {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+// 文本居中
+@mixin text-align($box-height) {
+    text-align: center;
+    line-height: $box-height;
+    
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: pink;
+    font-size: 10px;
+}
+// 头部导航
+header{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    height: 48px;
+    width: 100%;
+    z-index: 1000;
+    @include clerflex;
+    &>a:nth-child(1){
+        float: left;
+        width: 48px;
+        height: 48px;
+        background-image: url(../upload/header_left.jpg);
+    }
+    &>a:nth-child(2){
+       @include box-align();
+       display: inline-block;
+       width: 36px;
+       height: 36px;
+       img{
+           width: 100%;
+           height: 100%;
+       }
+    }
+    &>a:nth-child(3){
+        float: right;
+        width: 48px;
+        height: 48px;
+        background-image: url(../upload/jingling.png);
+        background-position: -186px -267px;
+    }
+    // !!!头部隐藏栏-左
+    #header-leftbox{
+        // display: none;
+        position: fixed;
+        left: -320px;
+        top: 0;
+        overflow:scroll;
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #2f3543;
+        z-index: 1000;
+        transition:all 0.2s;
+        // logo
+        img{
+            width: 100%;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        // 关闭按钮
+        #header-leftbox-guan{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            background: url(../upload/header-leftbox-guan.jpg);
+            background-size: 100%;
+        }
+        // 按键列表
+        li{
+            
+            border-top: 1px solid #444a56;
+            a{
+                display: block;
+                padding: 18px 25px;
+                font-size: 16px;
+                color: #e0e1e3;
+            }
+        } 
+    }
+}
+// 底部按钮
+#header-leftbox-guan-button{
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #f7931e;
+    color: #fff;
+    font-size: 20px;
+    padding:13px 0px; 
+    font-weight: 400;
+    border: 0;
+}
+.bottom-logo{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    @include relative-align();
+    padding: 20px 0;
+    img{
+        width: 100%;
+        height: 100%;
+        padding: 0 !important;
+    }
+}
+// !!!右隐藏盒子
+    #header-rightbox{
+        position: fixed;
+        top: 0;
+        right: -320px;
+        // 百分之90的可视窗口
+        width: 100%;
+        max-width: 320px;
+        height: 100vh;
+        overflow:scroll;
+        background-color: #151a23;
+        transition: all 0.2s;
+        // 关闭按钮
+        #header-rightbox-guan{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-image: url(../upload/jingling.png);
+            background-position: -96px -125px;;
+            width: 23px;
+            height: 23px;
+            z-index: 2;
+        }
+        .logolink{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 80px;
+            span{
+                display: inline-block;
+                width: 90px;
+                height: 40px;
+                background-image: url(../upload/jingling.png);
+                background-position: -18px -17px;
+                @include box-align()
+            }
+        }
+        // 登入按钮
+        .dengru-button{
+            padding: 20px 0;
+            width: 100%;
+            height: 40px;
+            border-top: 1px solid #252931;
+            background-color: #13171f;
+        }
+        button{
+            width: 90%;
+            height: 40px;
+            border: 0;
+            background-color: #0e86ca;
+            color: #fff;
+            font-size: 16px;
+            @include relative-align();
+            @include text-align(40px)
+        }
+        li{
+            border-top: 1px solid #252931;
+            a{
+                display: block;
+                height: 44px;
+                padding: 0px 25px;
+                font-size: 16px;
+                color: #b9bbbd;
+                line-height: 44px;
+            }
+        }
+    }
+    .zhanghu{
+        width: 100%;
+        a{
+            display: block;
+            width: 100%;
+            height: 44px;
+            font-size: 16px;
+            color: #b9babc;
+            background-color: #13171f;
+            line-height: 44px;
+            border-top: 1px solid #252931;
+            span{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url(../upload/jingling.png) no-repeat;
+                background-position: -141px -72px ;
+                vertical-align: middle;
+                margin-left: 15px;
+            }
+        }
+    }
+
+main{
+    width: 100%;
+    // height: 100%;
+    background: url(../upload/yushezhize_background.jpg) no-repeat;
+    background-size: cover;
+    background-color: #141516;
+    background-position: 50% 50%;
+    padding-top: 70px;
+    .contener{
+        margin: 0 auto;
+        width: 335px;
+        height: 100%;
+        padding-top: 25px;
+    }
+    .title{
+        width: 100%;
+        h2{
+            font-size: 25px;
+            color: #fff;
+            letter-spacing: .7px;
+        }
+        span{
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            margin: 15px 0 20px;
+            color: #6a6a6d;
+        }
+    }
+    .main-video{
+        width: 100%;
+        height:150px;
+        margin: 30px 0;
+        video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: #eaebeb;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    h3{
+        font-size: 20px;
+        color: #f88308;
+        padding: 40px 0 20px;
+    }
+    h4{
+        font-size: 14px;
+        color: #f0edf2;
+        padding: 20px 0;
+    }
+}
+.title-img{
+    width: 100%;
+    // height: 120px;
+    border: 2px solid #97989a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 30px 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
