@@ -1,2 +1,2 @@
 # cn.com.blizzard.ow
-HTML+CSS项目
+PC端项目：守望先锋官网（仿）
