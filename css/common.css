@@ -1,0 +1,255 @@
+/* 清除浮动 */
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+/* 版心 */
+/* .content{
+    
+} */
+/* 预设职责版心 */
+.The-default-responsibilities-banxin{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+/* 英雄链接 */
+.herolink{
+    width: 100%;
+}
+.herolink-banxin{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.herolink-banxin li{
+    display: inline-block;
+}
+.herolink-banxin a{
+    display: inline-block;
+}
+.herolink-banxin .thehero-select-minbox:hover{
+    width: 84px;
+    height: 100.8px;
+    margin: -6px -1px;
+    background-color: #f7931e;
+}
+.thehero-select-minbox:hover .thehero-select span{
+    background-color: #f0edf2;
+}
+    
+.herolink-banxin span{
+    display: block;
+    font-size: 13px;
+}
+.thehero-select-minbox{
+    display: inline-block;
+    transform: skew(25rad);
+    width: 70px;
+    height: 84px;
+    overflow: hidden;
+    border-radius: 7px;    
+    border: 3px solid #f0edf2;
+    border-left-width: 0;
+    border-right-width: 0;
+    margin: 2.4px 6px;
+    background-color: #464445;
+}
+.thehero-select-role{
+    display: inline-block;
+    width: calc(100% + 10px);
+    height: 100%;
+    background: url(../image/thehero-dva-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+    transform: skew(-25rad) translateX(-5px);
+}
+/* 英雄按钮 */
+/* 奥丽莎部分 */
+.thehero-select-aolisha .thehero-select-role{
+    background: url(../image/thehero-aolisha-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+
+/* 莱因哈特部分 */
+.thehero-select-laiyinhate .thehero-select-role{
+    background: url(../image/thehero-laiyinhate-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 路霸部分 */
+.thehero-select-luba .thehero-select-role{
+    background: url(../image/thehero-luba-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 温斯顿部分 */
+.thehero-select-wensidun .thehero-select-role{
+    background: url(../image/thehero-wensidun-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 查莉娅部分 */
+.thehero-select-chaliya .thehero-select-role{
+    background: url(../image/thehero-chaliya-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 破坏球部分 */
+.thehero-select-pohuaiqiu .thehero-select-role{
+    background: url(../image/thehero-pohuaiqiu-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 西格玛部分 */
+.thehero-select-xigema .thehero-select-role{
+    background: url(../image/thehero-xigema-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 巴蒂斯特部分 */
+.thehero-select-badisite .thehero-select-role{
+    background: url(../image/thehero-badisite-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 艾什部分 */
+.thehero-select-aishen .thehero-select-role{
+    background: url(../image/thehero-aishen-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 堡垒部分 */
+.thehero-select-baolei .thehero-select-role{
+    background: url(../image/thehero-baolei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 末日铁拳部分 */
+.thehero-select-moritiequan .thehero-select-role{
+    background: url(../image/thehero-moritiequan-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 源氏部分 */
+.thehero-select-yuanshi .thehero-select-role{
+    background: url(../image/thehero-yuanshi-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 半藏部分 */
+.thehero-select-banzang .thehero-select-role{
+    background: url(../image/thehero-banzang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 狂鼠部分 */
+.thehero-select-kuangshu .thehero-select-role{
+    background: url(../image/thehero-kuangshu-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 麦克雷部分 */
+.thehero-select-maikelei .thehero-select-role{
+    background: url(../image/thehero-maikelei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 美部分 */
+.thehero-select-mei .thehero-select-role{
+    background: url(../image/thehero-mei-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 法老之鹰部分 */
+.thehero-select-falaozhiying .thehero-select-role{
+    background: url(../image/thehero-falaozhiying-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 死神部分 */
+.thehero-select-sishen .thehero-select-role{
+    background: url(../image/thehero-sishen-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 士兵:76部分 */
+.thehero-select-shibing76 .thehero-select-role{
+    background: url(../image/thehero-shibing76-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 黑影部分 */
+.thehero-select-heiying .thehero-select-role{
+    background: url(../image/thehero-heiying-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 秩序之光部分 */
+.thehero-select-zhixuzhiguang .thehero-select-role{
+    background: url(../image/thehero-zhixuzhiguang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 托比昂部分 */
+.thehero-select-tuobiang .thehero-select-role{
+    background: url(../image/thehero-tuobiang-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 猎空部分 */
+.thehero-select-liekong .thehero-select-role{
+    background: url(../image/thehero-liekong-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 黑百合部分 */
+.thehero-select-heibaihe .thehero-select-role{
+    background: url(../image/thehero-heibaihe-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 安娜部分 */
+.thehero-select-anna .thehero-select-role{
+    background: url(../image/thehero-anna-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 布里吉塔部分 */
+.thehero-select-bulijita .thehero-select-role{
+    background: url(../image/thehero-bulijita-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 卢西奥部分 */
+.thehero-select-luxiao .thehero-select-role{
+    background: url(../image/thehero-luxiao-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 天使部分 */
+.thehero-select-tianshi .thehero-select-role{
+    background: url(../image/thehero-tianshi-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 莫伊拉部分 */
+.thehero-select-moyila .thehero-select-role{
+    background: url(../image/thehero-moyila-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
+/* 禅雅塔部分 */
+.thehero-select-chanyata .thehero-select-role{
+    background: url(../image/thehero-chanyata-anniu.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100% ;
+}
